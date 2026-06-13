@@ -643,6 +643,7 @@
       flex-wrap: wrap;
       gap: 10px;
       margin-top: auto;
+      padding-top: 16px;
     }
 
     .text-link {
@@ -1008,7 +1009,7 @@
           <h2>Projects, reports and research notes.</h2>
         </div>
         <p class="lead">
-          A selection of academic and technical work that shows how I investigate problems, build evidence and communicate security concepts clearly.
+          A curated selection of cybersecurity, cryptography, digital forensics, network security and software engineering work. The emphasis is on clear documentation, reproducible reasoning and business-aware security analysis.
         </p>
       </div>
 
@@ -1018,9 +1019,125 @@
         <button class="filter-btn" type="button" data-filter="network">Network</button>
         <button class="filter-btn" type="button" data-filter="governance">Governance</button>
         <button class="filter-btn" type="button" data-filter="forensics">Forensics</button>
+        <button class="filter-btn" type="button" data-filter="cryptography">Cryptography</button>
+        <button class="filter-btn" type="button" data-filter="software">Software</button>
       </div>
 
       <div class="grid-2" id="projectGrid">
+        <article class="card project-card reveal" data-category="research cryptography governance" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">Satellite QKD</span>
+              <span class="pill">QKD · Standards</span>
+            </div>
+            <h3>Satellite QKD Security Analysis: From Micius to Jinan-1</h3>
+            <p>
+              Security analysis of satellite-based Quantum Key Distribution, covering BB84 decoy-state QKD, Micius timing side channels, Jinan-1 architectural mitigations, trusted-node risks and QKD standardization.
+            </p>
+            <div class="pill-row">
+              <span class="pill">BB84</span><span class="pill">Side channels</span><span class="pill">Threat modeling</span><span class="pill">QKD standards</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/satellite-qkd-security-analysis" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="governance research" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">Cyber risk</span>
+              <span class="pill">GRC · Threat modeling</span>
+            </div>
+            <h3>Banking Cyber Risk Assessment</h3>
+            <p>
+              Cyber risk assessment and threat modeling case study for a simulated banking infrastructure, including STRIDE, MITRE ATT&CK, CVE mapping, TARA-style scoring, attack graphs and risk treatment.
+            </p>
+            <div class="pill-row">
+              <span class="pill">STRIDE</span><span class="pill">MITRE ATT&CK</span><span class="pill">Risk scoring</span><span class="pill">Controls</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/Banking-cyber-risk-assessment" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="forensics research" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">DFIR case study</span>
+              <span class="pill">Forensics · Reporting</span>
+            </div>
+            <h3>Operation Zodiac DFIR Case Study</h3>
+            <p>
+              Digital forensics and incident response case study covering network forensics, Linux host artefact analysis, OSINT, steganography triage, malware static analysis and forensic reporting.
+            </p>
+            <div class="pill-row">
+              <span class="pill">DFIR</span><span class="pill">Linux artefacts</span><span class="pill">OSINT</span><span class="pill">Malware triage</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/Operation-Zodiac-DFIR-Case-Study" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="network governance" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">Network security</span>
+              <span class="pill">GNS3 · IPsec</span>
+            </div>
+            <h3>IPsec VPN Misconfiguration Lab</h3>
+            <p>
+              GNS3-based site-to-site VPN misconfiguration lab covering PSK, PKI, IKEv1, weak crypto, wildcard PSKs, certificate lifecycle issues, Wireshark evidence and remediation.
+            </p>
+            <div class="pill-row">
+              <span class="pill">IPsec</span><span class="pill">PKI</span><span class="pill">Wireshark</span><span class="pill">Remediation</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/IPsec-VPN-Misconfiguration-Lab" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="research cryptography software" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">QKD simulation</span>
+              <span class="pill">Python · Qiskit</span>
+            </div>
+            <h3>QKD Basis Randomization Simulation</h3>
+            <p>
+              Educational BB84-inspired QKD simulation with dynamic basis-pair selection, Eve intercept-and-resend modeling, QBER estimation and Monte Carlo analysis.
+            </p>
+            <div class="pill-row">
+              <span class="pill">QKD</span><span class="pill">QBER</span><span class="pill">Monte Carlo</span><span class="pill">Jupyter</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/QKD-basis-randomization-qiskit" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card reveal" data-category="software" data-tilt>
+          <div class="card-inner project-card">
+            <div class="project-top">
+              <span class="project-label">Software engineering</span>
+              <span class="pill">Java · Maven</span>
+            </div>
+            <h3>Java OOP Portfolio</h3>
+            <p>
+              Curated Java object-oriented programming portfolio with Maven case studies, unit tests, GitHub Actions and cleaned academic projects. Included as software engineering foundation alongside security work.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Java</span><span class="pill">OOP</span><span class="pill">Maven</span><span class="pill">GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="https://github.com/StefanoFalco/Java-OOP-Portfolio" target="_blank" rel="noopener noreferrer">GitHub repo →</a>
+            </div>
+          </div>
+        </article>
+
         <article class="card project-card reveal" data-category="research forensics" data-tilt>
           <div class="card-inner project-card">
             <div class="project-top">
@@ -1077,28 +1194,8 @@
             </div>
           </div>
         </article>
-
-        <article class="card project-card reveal" data-category="network forensics governance" data-tilt>
-          <div class="card-inner project-card">
-            <div class="project-top">
-              <span class="project-label">Hands-on security</span>
-              <span class="pill">Labs · Documentation</span>
-            </div>
-            <h3>Security Labs & Technical Documentation</h3>
-            <p>
-              Hands-on academic work across network security, cryptography and forensic methodology: structured reports, reproducible procedures, traffic analysis, risk reasoning and clear deliverables.
-            </p>
-            <div class="pill-row">
-              <span class="pill">IPsec VPN</span><span class="pill">QKD/BB84</span><span class="pill">DFIR</span><span class="pill">Risk analysis</span>
-            </div>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/StefanoFalco" target="_blank" rel="noopener noreferrer">GitHub profile →</a>
-            </div>
-          </div>
-        </article>
       </div>
     </section>
-
     <section class="section" id="experience">
       <div class="section-heading reveal">
         <div>
@@ -1344,4 +1441,6 @@
   </script>
 </body>
 </html>
+
+
 
